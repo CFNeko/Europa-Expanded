@@ -1,0 +1,15 @@
+pap_jerusalem_modifier = {
+	potential = {
+		tag = KOJ
+		march_of = PAP
+		PAP = { 
+			mission_completed = Jerusalem
+		}
+	}
+	trigger = {
+		always = yes
+	}
+	
+	global_missionary_strength = 0.03
+	warscore_cost_vs_other_religion = -0.25
+}

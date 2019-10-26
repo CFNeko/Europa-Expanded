@@ -1,0 +1,21 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+
+###########################################
+# Discovery of the East Indian trade route.
+###########################################
+production_leader_metalworking = {
+	potential = {
+		
+	}
+
+	trigger = {
+		production_leader = {
+			trade_goods = metalworking
+		}
+	}
+
+}
