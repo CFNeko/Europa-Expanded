@@ -1,5 +1,0 @@
-# Special countries...
-ANE = "countries/Angevin.txt"
-MGB = "countries/Maghreb.txt"
-GRR = "countries/RussianRepublic.txt"
-WKU = "countries/Wokou.txt"
