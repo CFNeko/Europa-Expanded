@@ -1,0 +1,44 @@
+declarewar = {
+	condition = {
+		tooltip = XXX
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				mission_completed = sweden_support_the_roman_church
+				FROM = {
+					NOT = { religion = catholic }
+				}
+			}
+			change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
+		}
+	}
+}
+
+requestpeace = {
+	condition = {
+		tooltip = CANNOT_SIGN_SEPERATE_PEACE_AS_INDIAN_HEGEMONY_COUP_TARGET
+		potential = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+				casus_belli = cb_persia_indian_hegemony_coup
+			}
+			OR = {
+				tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				FROM = {
+					tag = event_target:me_persia_indian_hegemony_mechanic_coup_target
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
